@@ -1,0 +1,22 @@
+<html ng-app="formApp">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../angular.min.js"></script>
+  </head>
+  <body>
+    <form ng-controller="formCtrl">
+      <div class="email">
+        <label>邮箱：</label>
+        <input type="email" placeholder="请输入邮箱" ng-model="form.email"/>
+      </div>
+      <div class="password">
+        <label>密码：</label>
+        <input type="password" placeholder="请输入密码" ng-model="form.password"/>
+      </div>
+      <button ng-click="sayEmail()">获取Email</button>
+      <button ng-click="sayPassword()">获取Password</button>
+    </form>
+
+    <script type="text/javascript" src="formController.js"></script>
+  </body>
+</html>

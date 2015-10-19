@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+<head>
+	<title>ng-class test</title>
+	<link rel="stylesheet" type="text/css" href="ng-class.css">
+	<script type="text/javascript" src="../angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="changeColor">
+	<p ng-class="{erro:errostate,warning:warningstate}" ng-bind="text"></p>
+		<button ng-click="erro()">erro</button>
+		<button ng-click="warning()">warning</button>
+	</div>
+
+	<script type="text/javascript" src="ng-classController.js"></script>
+</body>
+</html>
